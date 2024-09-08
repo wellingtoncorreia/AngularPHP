@@ -1,0 +1,57 @@
+<div class="container mt-5">
+  <h2 class="mb-4">Gerenciamento de Usuário</h2>
+
+  <div class="card mb-4">
+    <div class="card-header">
+      <h3 class="mb-0">Cadastro de usuário</h3>
+    </div>
+    <div class="card-body">
+      <form (submit)="createUser()">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username:</label>
+          <input [(ngModel)]="newUser.username" name="username" required class="form-control" id="username">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input [(ngModel)]="newUser.email" name="email" required class="form-control" id="email">
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password:</label>
+          <input [(ngModel)]="newUser.password" name="password" required type="password" class="form-control" id="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Salvar</button>
+      </form>
+    </div>
+  </div>
+
+  <h3>Usuários Cadastrados</h3>
+  <ul class="list-group mb-4">
+    <li *ngFor="let user of users" class="list-group-item d-flex justify-content-between align-items-center">
+      <span>{{ user.username }} - {{ user.email }} </span>
+      <div>
+        <button class="btn btn-sm btn-warning me-2" (click)="selectUser(user)">Editar</button>
+        <button class="btn btn-sm btn-danger" (click)="deleteUser(user.id)">Apagar</button>
+      </div>
+    </li>
+  </ul>
+
+  <div *ngIf="selectedUser" class="card">
+    <div class="card-header">
+      <h3 class="mb-0">Editar usuário</h3>
+    </div>
+    <div class="card-body">
+      <form (submit)="updateUser(selectedUser)">
+        <div class="mb-3">
+          <label for="editUsername" class="form-label">Username:</label>
+          <input [(ngModel)]="selectedUser.username" name="username" required class="form-control" id="editUsername">
+        </div>
+        <div class="mb-3">
+          <label for="editEmail" class="form-label">Email:</label>
+          <input [(ngModel)]="selectedUser.email" name="email" required class="form-control" id="editEmail">
+        </div>
+        <button type="submit" class="btn btn-primary">Atualizar</button>
+        <button type="button" class="btn btn-secondary" (click)="clearSelection()">Cancelar</button>
+      </form>
+    </div>
+  </div>
+</div>
