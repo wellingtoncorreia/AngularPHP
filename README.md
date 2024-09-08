@@ -1,32 +1,45 @@
 # AngularPHP
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
+Uma aplicação web de exemplo que demonstra a integração entre o Angular e o PHP para criar um sistema com frontend em Angular e backend em PHP. 
 
-# Public
-### [http://wellingtonapp.infinityfreeapp.com](http://wellingtonapp.infinityfreeapp.com/?i=1)<br><br>
+Acesse o projeto ao vivo: [http://wellingtonapp.infinityfreeapp.com](http://wellingtonapp.infinityfreeapp.com)
+
 ![image](https://github.com/user-attachments/assets/07c10ba9-b4a4-4f46-9ea6-4c433907ff43)
 
+## Descrição
 
-## Development server
+Este repositório contém uma aplicação web que utiliza Angular no frontend e PHP puro no backend, com um banco de dados MySQL para armazenar e gerenciar dados. O projeto inclui funcionalidades de CRUD (Create, Read, Update, Delete) e exemplifica a integração entre as duas tecnologias.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Funcionalidades
 
-## Code scaffolding
+- **Frontend**: Desenvolvido com Angular, incluindo componentes para visualização e interação com dados.
+- **Backend**: Implementado em PHP para gerenciamento de dados e operações no servidor.
+- **Banco de Dados**: MySQL para armazenamento de dados.
+- **Autenticação e Autorização**: Funcionalidades básicas para registro e login de usuários.
+- **CRUD**: Operações completas de Create, Read, Update e Delete para gerenciamento de dados.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tecnologias
 
-## Build
+- **Frontend**: Angular
+- **Backend**: PHP
+- **Banco de Dados**: MySQL
+- **Servidor**: Apache
+- **Estilização**: Bootstrap (ou outra biblioteca de sua escolha, se aplicável)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Instalação
 
-## Running unit tests
+### Pré-requisitos
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Certifique-se de ter os seguintes itens instalados:
 
-## Running end-to-end tests
+- [Node.js](https://nodejs.org/) (inclui o npm)
+- [Angular](https://angular.dev/)
+- [PHP](https://www.php.net/)
+- [MySQL](https://www.mysql.com/)
+- [Apache](https://httpd.apache.org/)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Configuração do Backend
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/wellingtoncorreia/AngularPHP.git
