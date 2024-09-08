@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
 
+#Public
+[http://wellingtonapp.infinityfreeapp.com](http://wellingtonapp.infinityfreeapp.com/?i=1)
+![image](https://github.com/user-attachments/assets/07c10ba9-b4a4-4f46-9ea6-4c433907ff43)
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
